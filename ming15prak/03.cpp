@@ -55,3 +55,27 @@ int main (){
    cout << "huruf dalam kalimat tersebut ada : " << carihuruf(kalimat,cari); 
 }
 */
+
+//memakai fungsi di library bawaan string 
+/*
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+   string kalimat;
+   char huruf;
+   int cari = 0;
+
+   cout << "input kalimat : ";
+   getline(cin,kalimat);
+  
+   cout << "input huruf yg ingin di cari dan dihitung : ";
+   cin >> huruf;
+
+   cari = count(kalimat.begin(),kalimat.end(),huruf);
+   cout << "huruf ada : " << cari;
+
+}
+*/
