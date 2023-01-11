@@ -79,3 +79,33 @@ int main()
 
 }
 */
+
+//mengunakan fungsi bawaan library string tapi dibuat menjadi fungsi
+/*
+#include<iostream>
+#include<string>
+using namespace std;
+int carihuruf(string a, char b){ //fungsi yang didalamnya menggunakan fungsi dari library bawaan string
+    return count(a.begin(),a.end(),b);
+}
+int main(){
+   string kalimat;
+   char n;
+   char ulang;
+   cout << "masukkan kalimat : ";
+   getline(cin,kalimat);//jika string dimasukkan dalam perulangan maka perulangan akan berhenti(tdk tahu karena apa)
+
+   while(true){ //perulangan tanpa batas menggunakan while loop,bisa juga dengan do while 
+   cout << "masukkan huruf : ";
+   cin >> n;
+
+   cout << "jumlah kalimat adalah = " << carihuruf(kalimat,n) << endl;
+   
+   cout << "apakah ingin mengulang lagi (y/n) : ";
+   cin >> ulang;
+   if (ulang == 'n' || ulang == 'N'){ // kondisi jika pengguna menginput n atau N maka perulangan akan berhenti dengan menggunakan break
+    break;
+   }
+   }
+}
+*/
